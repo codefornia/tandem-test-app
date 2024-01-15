@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Graphik', sans-serif;
+  font-weight: 700;
+  src: local('Graphik-Semibold'),
+  url('./fonts/Graphik-Semibold.woff2') format('woff2'),
+  url('./fonts/Graphik-Semibold.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Graphik', sans-serif;
+  font-weight: 500;
+  src: local('Graphik-Medium'),
+  url('./fonts/Graphik-Medium.woff2') format('woff2'),
+  url('./fonts/Graphik-Medium.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Graphik', sans-serif;
+  font-weight: 400;
+  src: local('PTSans-Regular'),
+  url('./fonts/Graphik-Regular.woff2') format('woff2'),
+  url('./fonts/Graphik-Regular.woff') format('woff')
+}

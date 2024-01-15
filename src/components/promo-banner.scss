@@ -1,0 +1,97 @@
+@import '../style/variables.scss';
+
+.promo-banner {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: $promo-banner-width;
+  height: 349px;
+  border-radius: 16px;
+  position: fixed;
+  right: $promo-banner-right;
+  bottom: 50px;
+  font-size: 16px;
+  background-image: url('../img/banner.webp');
+  background-position: right;
+  background-size: cover;
+  background-color: $primaryColor;
+  box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.45);
+  transform: translateX(90%);
+  animation: ani 2s forwards;
+  padding: 68px 30px 55px;
+
+  @keyframes ani {
+    0% {transform: translateY(45%);}
+    100% {transform: translateX(0);}
+  }
+
+  @media (max-width: $promo-banner-right*2 + $promo-banner-width) {
+    left: 50%;
+    margin-left: -300px;
+    margin-top: auto;
+    background-position: right;
+  }
+
+  @media (max-width: $promo-banner-width) {
+    width: 100%;
+    min-width: 300px;
+    right: 0;
+    margin: 0;
+    left: 0;
+    bottom: 50px;
+    justify-content: center;
+    border-radius: 0;
+  }
+
+  &__info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    & > * {
+      margin: 0;
+    }
+  }
+
+  &__title {
+  text-align: center;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  }
+
+  &__discount {
+  color: transparent;
+  background-clip: text;
+  background-image: $textGradientColor;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+  }
+
+  &__promo {
+  color: $thirdColor;
+  margin-bottom: auto;
+  span {
+    color: $secondaryColor;
+  }
+}
+
+  &__button {
+  width: max-content;
+  border-radius: 14px;
+  padding: 12px 24px;
+  border: none;
+  background-color: $fourthColor;
+  color: $primaryTextColor;
+  font-size: 16px;
+  letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,21 @@
+$color-background-base: rgba(255, 255, 255, 1);
+
+$primaryColor: rgba(11, 11, 11, 1);
+$secondaryColor: rgba(215, 168, 48, 1);
+$thirdColor: rgba(108, 108, 112, 1);
+$fourthColor: rgba(255, 255, 255, 0.1);
+$primaryTextColor: rgba(255, 255, 255, 1);
+$secondaryTextColor: rgba(11, 11, 11, 1);
+$textGradientColor: linear-gradient(90deg, rgba(125, 83, 23, 1) 0%, rgba(237, 223, 149, 1) 100%);
+$secondaryTextGradientColor: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(11, 11, 11, 1) 100%);
+$shadowColor: rgba(0, 0, 0, 0.45);
+
+$promo-banner-width: 600px;
+$promo-banner-right: 50px;
+
+$min-mobile-width: 393px;
+$breakpoint-mobile-width: 460px;
+$breakpoint-middle-width: 642px;
+$breakpoint-tablet-width: 834px;
+$breakpoint-desktop-width: 1440px;
+

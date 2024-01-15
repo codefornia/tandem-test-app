@@ -1,0 +1,13 @@
+@import '../style/variables.scss';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  color: $color-background-base;
+  margin: 0 auto;
+  min-height: 2 * 100vh;
+  @media (min-width: $min-mobile-width) {
+    max-width: 100%;
+  }
+
+}
