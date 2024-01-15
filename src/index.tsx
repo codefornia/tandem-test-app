@@ -8,7 +8,7 @@ const root = createRoot(
 );
 
 root.render(
-
+    <StrictMode>
         <App />
- 
+    </StrictMode>
 );
